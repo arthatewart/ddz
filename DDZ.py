@@ -5,7 +5,7 @@ Do not use this software if you are uncertain of its fucntion or purpose.
 The user assumes all potential liability for loss or damages. 
 This software may be redistributed as per GPL V2 public license. 
 DDZ Version 0.0.1.3 
-Copywrite Aaron A. Dennis 2022 
+Copyrite Aaron A. Dennis 2022 
 '''
 ###############################################################################
 from reprint import output
