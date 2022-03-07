@@ -189,33 +189,25 @@ def guide_wp(sudo_s):
        	status_update(sudo_s)
        	return None
 
-if __name__ == '__main__':
-	'''
-	Runtime options. Yes, this sucks. Sorry, not sorry...
-	'''
+if (__name__ == '__main__' and uname().lower == 'linux'):
 	if(len(argv)<2):
 		exit()
-
 	elif (argv[1] == "-h" or argv[1] == "--help"):
 		print("This program tries to predict unmounted drives and zero them.")
 		print("-a will auto zero all unmounted drives.")
 		print("-g will enter guided mode, and ask to mark each drive.")
 		print("-l will list the drives and mount points predicted by automode")
-		print("-t will run in auto mode but dd drives to /dev/null")
-		
+		print("-t will run in auto mode and dd drives to /dev/null")	
 	elif (argv[1] == "-l"):
 		print_dk()
-			
 	elif (argv[1] == "-t" and len(argv) < 3):
 		run_me= root_dt1()
 		print_dk()
 		ddn_dk(run_me)
-		
 	elif (argv[1] == "-t"):
         	run_me= argv[2]
         	print_dk()
 		ddn_dk(run_me)
-	
 	elif (argv[1] =="-a" and len(argv) <3):
 		skull_cross()
 		print("DDZ Running in auto!")
@@ -224,7 +216,6 @@ if __name__ == '__main__':
         	ddz_dk(run_me)
         	time.sleep(3)
         	status_update(run_me)	
-
 	elif (argv[1] =="-a"):
 		skull_cross()
 		print("DDZ Running in auto!")
@@ -233,24 +224,20 @@ if __name__ == '__main__':
 		ddz_dk(run_me)
         	time.sleep(3)
         	status_update(run_me)
-
 	elif(argv[1] =="-g" and len(argv) <3):
 		skull_cross()
 		print("DDZ is Running in guided mode!")
 		run_me= root_dt1()
 		print_dk()
 		guide_wp(run_me)
-
 	elif(argv[1] =="-g"):
 		skull_cross()
 		print("DDZ is Running in guided mode!")
 		run_me= argv[2]
 		print_dk()
 		guide_wp(run_me)
-
 	elif(argv[1] == "-s"):
 		skull_cross()
 		exit()
-
 ###############################################################################	
 
