@@ -17,5 +17,5 @@ python DDZ.py -h displays these options
 python DDZ.py -a will auto zero all unmounted drives 
 python DDZ.py -g will enter guided mode, and ask to mark each drive 
 python DDZ.py -l will list the drives and mount points predicted by automode
-python DDZ.py -t will run in auto mode but dd drives to /dev/null 
+python DDZ.py -t will run in auto mode and dd drives to /dev/null 
 
