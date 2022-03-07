@@ -30,4 +30,14 @@ python DDZ.py -l will list the drives and mount points predicted by automode
 python DDZ.py -t will run in auto mode and dd drives to /dev/null 
 
 
+DDZ was created to fullfill the needs of the author and is not intended for general use. 
+
+DDZ is shared for two express purposes, the first is to save time for similar applications. 
+The second is to enrich FOSS, and or to be harvested for examples. 
+
+WARNING!
+
+--------------------
+
+This program was designed and impliented to perminantly destroy data do not use this program if you do not understand and accept the potential risks associated with its use. 
 
